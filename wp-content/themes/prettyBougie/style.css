@@ -1,0 +1,984 @@
+/*
+Theme Name: Pretty Bougie Hair
+Theme URI:
+Author: BCreative GPX LLC
+Author URI:
+Description: Custom theme for Pretty Bougie Hair
+Version: 1.1.1
+License:
+License URI:
+Tags: hair, mobile first, responsive
+Text Domain: prettyBougie
+*/
+.sr-text {
+  display: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  font-family: 'Actor', sans-serif;
+}
+
+h1, h2 {
+  font-family: 'Monoton', cursive;
+  text-transform: uppercase;
+}
+
+h3, h4, h5 {
+  font-family: 'Comfortaa';
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+body {
+  background-color: #f6f6f6;
+}
+
+
+.clear, .clear::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+
+
+/**Social Menu**/
+.socials {
+  padding: 15px 0;
+  background-color: #000;
+}
+
+div.socials ul {
+  list-style: none;
+  text-align: center;
+  padding: 0
+}
+
+div.socials ul li {
+  display: inline-block;
+}
+
+div.socials ul li a:before {
+  font-family: 'Font Awesome 5 Brands';
+  font-weight: 900;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 5px;
+  content: '\f08e';
+  font-size: 25px;
+  color: #fff;
+  -webkit-font-smoothing: antialiazed;
+}
+
+div.socials li a[href*="facebook.com/prettybougiehair"]::before {
+  content: '\f39e';
+}
+
+div.socials li a[href*="instagram.com"]::before {
+  content: '\f16d';
+}
+
+div.logo {
+  text-align: left;
+
+}
+
+/**Header**/
+.img-fluid {
+  margin-top: 25px;
+  height:80px;
+  margin-left: 25px;
+}
+
+.main-menu {
+  background-color: #ffe3f3;
+}
+
+.site-nav ul li {
+  color: #fff;
+}
+
+.site-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  font-family: 'Comfortaa';
+}
+
+.site-nav ul li.current_page_item a {
+    color: #f6a4bc;
+}
+
+.site-nav ul li a:hover {
+  color: #f6a4bc;
+}
+
+
+@media only screen and (min-width: 769px) {
+  nav .site-nav {
+    position: absolute;
+    display: block;
+  }
+}
+
+.main-menu {
+  padding-bottom: 15px;
+}
+
+.site-nav ul {
+  display: table;
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.closebtn {
+  display: none;
+}
+
+@media only screen and (min-width: 769px) {
+  .site-nav ul li {
+    position: relative;
+    display: table-cell;
+    padding: 0 10px;
+    font-size: 15px;
+    top: 40px;
+  }
+  .site-nav ul li a {
+    color: #000;
+  }
+
+  .topnav {
+    width: 500px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 800px) {
+  .site-nav ul li {
+    left: 0;
+  }
+
+  .site-nav ul li a {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 2560px) {
+      .site-nav ul li {
+        right: -550px;
+      }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .mobile::before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f036';
+    font-size: 40px;
+    color: #000;
+  }
+
+  .mobile-menu {
+    position: relative;
+    text-align: right;
+    top: 20%;
+  }
+
+  .mobile-menu a {
+    text-decoration: none;
+  }
+
+  .topnav {
+    position: fixed;
+    display: none;
+    height: 100%;
+    width: 350px;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    padding-top: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .site-nav ul li {
+    padding: 20px;
+  }
+
+  .topnav .closebtn {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .topnav .closebtn:hover {
+    color: #f6a4bc;
+  }
+
+}
+
+
+
+/** Hero Image**/
+
+.hero {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 420px;
+  display: table;
+  margin: 170px auto;
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.2);
+}
+
+.hero .hero-content {
+  display: table-cell;
+  vertical-align: middle;
+  color: #fbe196;
+  z-index: 2;
+  position: relative;
+}
+
+
+@media only screen and (min-width:768px) {
+  .hero-text {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .hero-text h2 {
+    font-size: 60px;
+  }
+
+  .home-text  {
+    font-size:90px;
+    padding-top: 20px;
+  }
+}
+
+@media only screen and (min-width:992px) {
+  .hero-text {
+    width: 60%;
+  }
+}
+
+.main-content {
+  padding:0 50px;
+  position: relative;
+}
+
+main.text-center.content-text {
+  margin-top: -90px;
+  padding-bottom: 50px;
+}
+
+
+.main-content{
+  padding-bottom: 100px;
+}
+.content-text p {
+  font-size: 16px;
+  line-height: 50px;
+}
+
+/**Home Page**/
+.home div.hero {
+  height:800px;
+}
+
+@media only screen and (min-width:768px) {
+  .home .main-content {
+    margin-top:-100px;
+    padding: 0;
+  }
+}
+
+.primary-text{
+  display: flex;
+}
+.button {
+  width:auto;
+  padding-top:5px;
+  padding-bottom: 5px;
+  padding-right: 55px;
+  padding-left: 55px;
+  text-decoration: none;
+  background-color: #f6a4bc;
+  border-radius: 5px;
+  font-size: 35px;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+}
+
+.button:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.home-text {
+  font-family: 'Monoton', cursive;
+  text-transform: uppercase;
+}
+
+.colorChange {
+  color: #000;
+}
+
+.shop-content {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+}
+
+.padding {
+  padding-bottom: 60px;
+}
+
+.shopImg {
+  height: 500px;
+  width: auto;
+}
+
+.shop-content .information {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 100%;
+  width: 85%;
+  background-color: rgba(241, 158, 48, .75);
+  vertical-align: middle;
+  text-align: center;
+  color: #fff;
+  padding: 5px;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+.shop-content:hover .information {
+  top: 0;
+  opacity: 1;
+}
+
+.shop-content .information h3 {
+  font-size: 30px;
+  margin-top: 40px;
+  font-weight: 700;
+  color: #fff;
+}
+
+@media only screen and (max-width:767px) {
+  .shop-content {
+    margin-bottom: 30px;
+  }
+
+  .shop-content .information {
+    width: 70%;
+  }
+}
+
+section .care-tips {
+  position: relative;
+  height: 600px;
+  background-color: #000;
+}
+section .care-tips h3 {
+  text-align: center;
+  color: #f6a4bc;
+  padding: 80px 25px;
+}
+
+section .care-tips a {
+  position: absolute;
+  bottom: 40px;
+  padding-left: 40px;
+  text-decoration: none;
+  color: #f6a4bc;
+  letter-spacing: 4px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+section .care-tips p {
+  font-family: 'Comfortaa';
+  font-weight: 400;
+  font-size: 40px;
+  text-align: center;
+  color: #fff;
+  padding: 25px 25px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  line-height: 15px;
+}
+
+section .about {
+  background-image: url(img/img2.jpg);
+  background-color: rgba(255, 255, 255, 0.5);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.button2 {
+  position: absolute;
+  bottom: 40px;
+  right: 30%;
+  padding-top:15px;
+  padding-bottom: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
+  text-decoration: none;
+  text-align: center;
+  background-color: #000;
+  border-radius: 5px;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #f6a4bc;
+  cursor: pointer;
+}
+
+.button2:hover {
+  text-decoration: none;
+  background-color: #f6a4bc;
+  color: #fff;
+}
+
+.home-products {
+  padding: 25px 0;
+}
+
+.video {
+  background-color: #d9c076;
+  height: 100%;
+}
+
+.home-title h3 {
+  font-size: 5em;
+  letter-spacing: 2px;
+  line-height: 25px;
+  padding-top: 10%;
+}
+
+.home-video {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.home-video video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+@media only screen and (min-width: 320px) and (max-width: 475px) {
+
+  .mobile-menu {
+    position: relative;
+    text-align: right;
+    top: 20%;
+    left: 7.5em;
+  }
+
+  .home-text {
+    font-size: 20px;
+    text-align: center;
+  }
+  .colorChange {
+    font-size: 15px;
+    text-align: center;
+  }
+  .button {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 15px;
+  }
+
+  .home div.hero {
+    height: 300px;
+    background-position: right;
+  }
+
+}
+
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+  .mobile-menu {
+    left: 390px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 769px) {
+  .mobile-menu {
+    left: 500px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .home div.hero {
+    height: 500px;
+    background-position: right;
+    background-size: cover;
+  }
+
+  .home-text {
+    font-size: 45px;
+    text-align: center;
+  }
+
+}
+
+@media only screen  and (max-width: 768px) {
+
+  .shop-content .information {
+    width: 100%;
+  }
+
+  section .care-tips {
+    height: 300px;
+  }
+
+  section .care-tips h3 {
+    padding: 10px 25px;
+  }
+
+  section .care-tips p {
+    font-size: 25px;
+  }
+
+  section .about {
+    height: 300px;
+  }
+
+  .button2 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 15px;
+    bottom: 10px;
+  }
+
+  .home-title {
+    height: 300px;
+  }
+
+  .home-title h3 {
+    font-size: 25px;
+    line-height: 10px;
+    text-transform: capitalize;
+  }
+
+  .home-video {
+    height: 46vh;
+    min-height: 15rem;
+  }
+}
+
+/**FAQ**/
+.main-content .faq-text {
+  margin-top: -90px;
+  padding-bottom: 50px;
+}
+
+.main-content .faq-text ul li {
+  font-size: 20px;
+}
+
+
+/**Footer**/
+footer {
+  background-color: #333333;
+  padding: 30px;
+}
+
+.footerImage {
+  width: 130px;
+  padding-bottom: 20px;
+}
+
+.footerLogo {
+  text-align: center;
+}
+
+.menu {
+  text-align: center;
+}
+
+.menu h4 {
+  color: #f6a4bc;
+  margin-left: 25px;
+  text-transform: uppercase;
+}
+
+
+.footerMenu ul{
+  list-style: none;
+}
+
+.footerMenu ul li a {
+  text-decoration: none;
+  color: #fff;
+  line-height: 30px;
+}
+
+#footerMenu {
+  margin-left: -35px;
+}
+
+.container h1.page-title {
+ margin-top: -40%;
+}
+
+
+
+/*WooCommerce*/
+
+.woocommerce .woocommerce-ordering select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  padding: 0 0 0 22px;
+  background: none;
+  border-radius: 0;
+}
+
+.woocommerce .woocommerce-ordering {
+	position: relative;
+}
+form.woocommerce-ordering::before {
+  font-family:'Font Awesome 5 Free';
+  content: '\f338';
+	position: absolute;
+	left: 0;
+	top: 0;
+  padding-bottom: 20px;
+}
+
+/* button */
+.woocommerce #respond input#submit.disabled,
+.woocommerce #respond input#submit:disabled,
+.woocommerce #respond input#submit:disabled[disabled],
+.woocommerce a.button.disabled, .woocommerce a.button:disabled,
+.woocommerce a.button:disabled[disabled],
+.woocommerce button.button.disabled,
+.woocommerce button.button:disabled,
+.woocommerce button.button:disabled[disabled],
+.woocommerce input.button.disabled,
+.woocommerce input.button:disabled,
+.woocommerce input.button:disabled[disabled], /* for disabled state */
+.woocommerce #content input.button,
+.woocommerce #respond input#submit,
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button,
+.woocommerce #content input.button.alt,
+.woocommerce #respond input#submit.alt,
+.woocommerce a.button.alt,
+.woocommerce button.button.alt,
+.woocommerce input.button.alt {
+    background-color: #ec99c2;
+    border: none;
+    border-radius: 3px;
+    box-shadow: none;
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: none;
+    padding: .6em 1.2em;
+    letter-spacing: .065em;
+    transition: all .3s ease-in-out;
+}
+
+.woocommerce #respond input#submit.alt.disabled:hover,
+.woocommerce #respond input#submit.alt:disabled:hover,
+.woocommerce #respond input#submit.alt:disabled[disabled]:hover,
+.woocommerce a.button.alt.disabled:hover,
+.woocommerce a.button.alt:disabled:hover,
+.woocommerce a.button.alt:disabled[disabled]:hover,
+.woocommerce button.button.alt.disabled:hover,
+.woocommerce button.button.alt:disabled:hover,
+.woocommerce button.button.alt:disabled[disabled]:hover,
+.woocommerce input.button.alt.disabled:hover,
+.woocommerce input.button.alt:disabled:hover,
+.woocommerce input.button.alt:disabled[disabled]:hover,
+
+.woocommerce #content input.button:hover,
+.woocommerce #respond input#submit:hover,
+.woocommerce a.button:hover,
+.woocommerce button.button:hover,
+.woocommerce input.button:hover,
+.woocommerce #content input.button.alt:hover,
+.woocommerce #respond input#submit.alt:hover,
+.woocommerce a.button.alt:hover,
+.woocommerce button.button.alt:hover,
+.woocommerce input.button.alt:hover {
+    background-color: #ffe3f3;
+    color: #000;
+}
+
+.woocommerce form .form-row .input-text,
+.woocommerce form .form-row select {
+    border: 1px solid #ddd;
+}
+
+.woocommerce #content nav.woocommerce-pagination ul,
+.woocommerce nav.woocommerce-pagination ul {
+    border: none;
+    border-right: 0;
+}
+
+.woocommerce #content nav.woocommerce-pagination ul li,
+.woocommerce nav.woocommerce-pagination ul li {
+    border-right: 0;
+}
+
+.woocommerce #content nav.woocommerce-pagination ul li a:focus,
+.woocommerce #content nav.woocommerce-pagination ul li a:hover,
+.woocommerce #content nav.woocommerce-pagination ul li span.current,
+.woocommerce nav.woocommerce-pagination ul li a:focus,
+.woocommerce nav.woocommerce-pagination ul li a:hover,
+.woocommerce nav.woocommerce-pagination ul li span.current {
+    background-color: #ec99c2;
+    color: #fff;
+}
+
+
+.wpf-search-container ul.products.columns-4 .product:nth-of-type(4n+1),
+.wpf-search-container ul.products.columns-3 .product:nth-of-type(3n+1),
+.wpf-search-container ul.products.columns-2 .product:nth-of-type(2n+1),
+.woocommerce.grid4 ul.products .product:nth-of-type(4n+1),
+.woocommerce.grid3 ul.products .product:nth-of-type(3n+1),
+.woocommerce.grid2 ul.products .product:nth-of-type(2n+1),
+.woocommerce.grid2-thumb ul.products .post:nth-of-type(2n+1) {
+	margin-left: 0;
+	clear: left;
+}
+
+.woocommerce form .form-row .select2-container .select2-choice {
+	padding: .4em .5em;
+	border: 1px solid #ddd;
+	border-radius: 0;
+}
+.woocommerce #customer_details,
+.woocommerce-page #customer_details {
+	margin: 0 0 2em;
+}
+
+.woocommerce ul.products li.product .woocommerce-loop-product__title, .woocommerce ul.products li.product .woocommerce-loop-category__title, .woocommerce ul.products li.product h3, .woocommerce div.product .product_title, .wc-products .product h3 a {
+color: #ec99c2;
+font-family: 'Comfortaa';
+}
+
+.woocommerce ul.products li.product .woocommerce-loop-category__title, .woocommerce ul.products li.product .woocommerce-loop-product__title, .woocommerce ul.products li.product h3 {
+padding: .5em 0;
+margin: 0;
+font-size: 15px;
+}
+
+.woocommerce .wc-products .product, .woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
+text-align: center;
+transition: all .3s linear;
+margin-bottom: 1em;
+}
+
+.woocommerce ul.products li.product .price {
+color: #000;
+font-size: 1em;
+}
+
+.woocommerce img, .woocommerce-page img {
+  height: 90px;
+}
+
+.woocommerce-loop-product__title {
+  font-family: 'Comfortaa';
+  font-size: 18px;
+}
+
+.shop-right {
+width: 80%;
+padding-left: 30%;
+text-align: center;
+}
+
+/*WooCommerce Sidebar*/
+div#secondary.sidebar-container {
+  width: 20%;
+  position: relative;
+  padding-left: 5%;
+  top: 23em;
+}
+
+.widget-title {
+  font-size: 20px;
+}
+
+aside {
+  padding: 30px 0;
+}
+
+@media only screen  and (max-width: 799px) {
+  div#secondary.sidebar-container {
+    display: none;
+  }
+
+  .shop-right {
+    width: 100%;
+    padding-left: 0;
+    margin-top: 27em;
+  }
+}
+
+
+
+
+/*Product Page*/
+
+.woocommerce div.product p.price, .woocommerce div.product span.price {
+  color: #000;
+}
+
+.posted_in a, .reset_variations {
+  color: #ec99c2;
+}
+
+.product_title .entry-title, div#tab-additional_information, section.related.products h2{
+  font-family: 'Comfortaa';
+}
+
+/*Checkout Page*/
+
+.woocommerce-info {
+    border-top-color: #000;
+}
+
+.woocommerce-info::before {
+    color: 000;
+}
+
+.woocommerce-error::before, .woocommerce-info::before, .woocommerce-message::before {
+    color: #000;
+}
+
+.showcoupon {
+  color: #ec99c2;
+}
+
+.woocommerce-billing-fields .form-row, .woocommerce-shipping-fields .form-row,.woocommerce form .form-row {
+  display: block;
+}
+
+.woocommerce .col2-set .col-1, .woocommerce-page .col2-set .col-1,.woocommerce .col2-set .col-2, .woocommerce-page .col2-set .col-2 {
+  max-width: unset;
+}
+
+.woocommerce #customer_details, .woocommerce-page #customer_details {
+  margin: 0 0 2em;
+}
+
+.woocommerce .col2-set .col-1, .woocommerce-page .col2-set .col-1 {
+  float: left;
+  width: 48%;
+}
+
+.woocommerce form .form-row {
+  padding: 3px;
+  margin: 0 0 6px;
+}
+
+textarea, input[type=text], input[type=password], input[type=search], input[type=email], input[type=url], input[type=number], input[type=tel], input[type=date], input[type=datetime], input[type=datetime-local], input[type=month], input[type=time]{
+  border: 1px solid #bdbdbd;
+  padding: .7em .5em;
+  margin: 0 1em .4em 0;
+  max-width: 100%;
+  -webkit-appearance: none;
+  color: #5b6270;
+  border-radius: 3px;
+}
+
+.woocommerce table.shop_table {
+  border-radius: 0;
+  border: 0;
+  border-collapse: collapse;
+  margin: 0 -1px 24px 0;
+  text-align: left;
+  width: 100%;
+}
+
+.woocommerce table.shop_table th {
+  padding: .4em 0;
+  font-weight: 900;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+.woocommerce table.shop_table td {
+  border-top: 1px solid rgba(0,0,0,.05);
+  padding: 1em 0;
+  vertical-align: middle;
+  line-height: 1.5em;
+}
+
+.woocommerce-checkout #payment ul.payment_methods {
+  border-bottom: 1px solid rgba(0,0,0,.07);
+}
+
+.woocommerce-privacy-policy-link {
+  color: #ec99c2;
+}
